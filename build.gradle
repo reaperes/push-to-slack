@@ -45,8 +45,8 @@ dependencies {
 
 flyway {
 	url = 'jdbc:mysql://localhost:3306/push_to_slack?serverTimezone=UTC'
-	user = "$dbUsername"
-	password = "$dbPassword"
+	user = "$flywayUsername"
+	password = "$flywayPassword"
 	schemas = ['push_to_slack']
 	locations = ["filesystem:$project.projectDir/src/main/resources/db/migration"]
 }
